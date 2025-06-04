@@ -11,3 +11,15 @@ sudo mkdir -p /etc/ansible
 sudo nano /etc/ansible/hosts
 ansible-inventory --list -y
 sudo ansible all -m ping
+
+
+pg8
+mkdir maventest1  
+cd maventest1
+mvn archetype:generate -DgroupId=com.Smrithi14 -DartifactId=proj8 -DarchetypeArtifactID=maven-archetype-quickstart -DinteractiveMode=false
+git init
+git add .
+git commit -m"first commit"
+git branch -M main
+git remote add origin https://
+git push -u origin main
