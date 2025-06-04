@@ -6,6 +6,9 @@ ssh-copy-id [username]@[remote-host]
  hostname -i
 sudo apt update
 sudo apt install ansible -y
+[local]
+localhost ansible
+connection=local
 ansible --version
 sudo mkdir -p /etc/ansible
 sudo nano /etc/ansible/hosts
